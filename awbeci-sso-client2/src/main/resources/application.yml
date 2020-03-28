@@ -1,0 +1,8 @@
+server:
+  port: 8902
+  servlet:
+    context-path: /client2
+
+spring:
+  application:
+    name: client2service
