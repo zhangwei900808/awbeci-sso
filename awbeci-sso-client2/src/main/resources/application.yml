@@ -29,4 +29,5 @@ security:
       user-authorization-uri: http://127.0.0.1:8900/sso/oauth/authorize
       access-token-uri: http://127.0.0.1:8900/sso/oauth/token
     resource:
-      token-info-uri: http://127.0.0.1:8900/sso/oauth/check_token
+      jwt:
+        key-uri: http://127.0.0.1:8900/sso/oauth/token_key
