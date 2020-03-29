@@ -10,7 +10,7 @@ public class TestController {
     @GetMapping("/")
     public ModelAndView index(){
         ModelAndView mv = new ModelAndView();
-        mv.setViewName("/");
+        mv.setViewName("index");
         return mv;
     }
 }

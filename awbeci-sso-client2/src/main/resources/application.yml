@@ -6,3 +6,27 @@ server:
 spring:
   application:
     name: client2service
+  thymeleaf:
+    cache: false
+    mode: HTML5
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+    prefix: classpath:/templates/
+    suffix: .html
+    resources:
+      chain:
+        strategy:
+          content:
+            enabled: true
+            paths: /**
+
+security:
+  oauth2:
+    client:
+      client-id: client2
+      client-secret: 123456
+      user-authorization-uri: http://127.0.0.1:8900/sso/oauth/authorize
+      access-token-uri: http://127.0.0.1:8900/sso/oauth/token
+    resource:
+      token-info-uri: http://127.0.0.1:8900/sso/oauth/check_token
